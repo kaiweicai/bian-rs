@@ -442,7 +442,7 @@ impl UFuturesWSClient {
         Self { base_url, proxy }
     }
 
-    fn build_single(
+    pub fn build_single(
         &self,
         symbol: String,
         channel: &str,
@@ -459,7 +459,7 @@ impl UFuturesWSClient {
         Ok(socket)
     }
 
-    fn build_multi(
+    pub fn build_multi(
         &self,
         symbols: Vec<String>,
         channel: &str,
