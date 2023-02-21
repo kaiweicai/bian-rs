@@ -356,7 +356,7 @@ impl<'de> Deserialize<'de> for DepthOrder {
     where
         D: Deserializer<'de>,
     {
-        deserializer.deserialize_tuple(2, DepthOrderVisitor)
+        deserializer.deserialize_tuple(8, DepthOrderVisitor)
     }
 }
 
